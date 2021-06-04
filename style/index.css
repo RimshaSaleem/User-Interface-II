@@ -1,7 +1,71 @@
-/* Add CSS styling here */
+/* Add CSS styling here
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}  */
+ *{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width:100%;
+    /* border:1px solid grey; */
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
 body{
+    font-size:1.8rem;
+    color:black;
+     line-height:1.5; 
+    /* line-height: 2em; */
+   
+    background-color:#FFFAFA;
     font-family: 'Akaya Telivigala', cursive;
 }
+/* body{
+    font-family: 'Akaya Telivigala', cursive;
+    /* @media only screen and (min-width: 768px) {
+        flex-direction:column; }
+
+      } */
+      /* border:1px solid blue; */
+
 nav {
     display: flex;
     /* justify-content: space-around; */
@@ -9,6 +73,11 @@ nav {
     /* color:black;
     background-color: yellow; */
     /* border:1px solid black; */
+    
+    text-align: center;
+    height:auto;
+    padding:5px;
+    text-align: center;
   }
 
   @media only screen and (min-width: 768px) {
@@ -21,25 +90,39 @@ nav {
     display:flex;
     flex-direction: column-reverse;
     text-align: center;
-    margin: 0;
+    margin: 1px;
     padding: 20px;
     border: 1px solid #ddd;
     text-decoration: none;
     color: #555;
-    background-color: yellow;
-    border-radius: 10px;
-    Margin-top:20px;
+    background-color:white;
+    border-radius: 5px;
+    margin-top:10px;
+    
+    width: 100px;
+    height:5px;
   }
   nav a:hover{
-      background-color:blue;
+      background-color:#555;
       transition: 1s;
+      color:white;
   }
   .active{
       background-color: #555;
+      color:white;
   }
-  /* h1{
-      float:left;
-  } */
+    .div-1 h1{
+      /* margin-left:20px; */
+      margin:10px;
+      margin-right:-100px
+      
+
+  } 
+  .div-1{
+      background-color: grey;
+      height:auto
+  } 
+
   .media {
     display: flex;
     align-items: flex-start;
@@ -52,26 +135,42 @@ nav {
   }
   .media-object {
     margin-right: 1em;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8);
+}
   }
   .media-body {
     /* flex: 1; */
     flex:2;
   }
+  .media-body h1 {
+    /* flex: 1; */
+    font-size: 25px;
+    font-weight: bold;
+  }
   /* .media-heading {
     margin: 0 0 .5em;
 
   } */
-  .media p{
+  .media-body.media-heading p{
       padding:40px;
     font-size: 20px;
-    line-height: 1;
+    line-height: 0;
 }
-.media button{
+.media-body button{
     padding:10px;
     width: 200px;
     height: 40px;;
     text-align: center;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+    background-color: #838383;
+    color:white;
+    margin: 20px;
+    
+}
+.media-body button:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
 }
 .container-image {
 	display: flex;
@@ -99,7 +198,7 @@ nav {
 	transform: scale(1.1);
 }
 .container-image img{
-    box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8);
 }
 .site-footer {
     background-color: #838383;
@@ -112,7 +211,7 @@ nav {
       text-align: center;
   }
   
-  /*Social Media Icons*/
+  
   .social-wrapper {
       text-align: center;
   }
@@ -150,4 +249,24 @@ nav {
   
   .footer-nav p {
       text-align: center;
+  }
+  /* .div-1{
+      background-color: #838383;
+      width: 100%;
+      height: 140px;;
+
+  } */
+  .site-footer button{
+    padding:10px;
+    width: 200px;
+    height: 40px;;
+    text-align: center;
+    /* margin-left: 50px; */
+    background-color:white;
+    color:black;
+  }
+  .site-footer button:hover{
+background-color:#838383;
+color: white;
+ transation:1s;
   }
